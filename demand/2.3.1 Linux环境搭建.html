@@ -1,0 +1,660 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.3.1 Linux环境搭建 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2.3.2 Linux链接工具安装.html" />
+    
+    
+    <link rel="prev" href="2.3 Dubbo.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">一 ,前言</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../introduction/1.1 电商行业分析.html">
+            
+                <a href="../introduction/1.1 电商行业分析.html">
+            
+                    
+                    1.1 电商行业分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../introduction/1.2 电商行业技术特点.html">
+            
+                <a href="../introduction/1.2 电商行业技术特点.html">
+            
+                    
+                    1.2 电商技术特点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../introduction/1.3 主流商业模式.html">
+            
+                <a href="../introduction/1.3 主流商业模式.html">
+            
+                    
+                    1.3 主流商业模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../introduction/1.4 敏捷开发软件安装.html">
+            
+                <a href="../introduction/1.4 敏捷开发软件安装.html">
+            
+                    
+                    1.4 敏捷开发软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../introduction/1.5 项目资源管理平台.html">
+            
+                <a href="../introduction/1.5 项目资源管理平台.html">
+            
+                    
+                    1.5 项目资源管理平台.md
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../introduction/1.5.1 node安装和配置.html">
+            
+                <a href="../introduction/1.5.1 node安装和配置.html">
+            
+                    
+                    1.5.1 nodejs安装和配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../introduction/1.5.2 npm更换为cnpm.html">
+            
+                <a href="../introduction/1.5.2 npm更换为cnpm.html">
+            
+                    
+                    1.5.2 npm更换为cnpm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../introduction/1.5.3 gitbook安装.html">
+            
+                <a href="../introduction/1.5.3 gitbook安装.html">
+            
+                    
+                    1.5.3 gitbook安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../introduction/1.5.4 gitbook使用.html">
+            
+                <a href="../introduction/1.5.4 gitbook使用.html">
+            
+                    
+                    1.5.4 gitbook使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../introduction/1.6 Markdown相关.html">
+            
+                <a href="../introduction/1.6 Markdown相关.html">
+            
+                    
+                    1.6 Markdown相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">二,优乐选-需求分析与系统设计</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="2.1 优乐选-简介.html">
+            
+                <a href="2.1 优乐选-简介.html">
+            
+                    
+                    2.1 优乐选简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="2.2 优乐选-系统架构.html">
+            
+                <a href="2.2 优乐选-系统架构.html">
+            
+                    
+                    2.2 优乐选-系统架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="2.3 Dubbo.html">
+            
+                <a href="2.3 Dubbo.html">
+            
+                    
+                    2.3 Dubbo
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.3.1" data-path="2.3.1 Linux环境搭建.html">
+            
+                <a href="2.3.1 Linux环境搭建.html">
+            
+                    
+                    2.3.1 Linux环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="2.3.2 Linux链接工具安装.html">
+            
+                <a href="2.3.2 Linux链接工具安装.html">
+            
+                    
+                    2.3.2 Linux链接工具安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="2.3.3 Linux相关基础配置.html">
+            
+                <a href="2.3.3 Linux相关基础配置.html">
+            
+                    
+                    2.3.3 Linux相关基础配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="2.3.4 使用链接工具接入到Linux操作系统.html">
+            
+                <a href="2.3.4 使用链接工具接入到Linux操作系统.html">
+            
+                    
+                    2.3.4 使用链接工具接入到Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="2.4 Zookeeper.html">
+            
+                <a href="2.4 Zookeeper.html">
+            
+                    
+                    2.4 Zookeeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="2.4.1 Zookeeper安装.html">
+            
+                <a href="2.4.1 Zookeeper安装.html">
+            
+                    
+                    2.4.1 Zookeeper安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="2.5 监控中心安装.html">
+            
+                <a href="2.5 监控中心安装.html">
+            
+                    
+                    2.5 监控中心安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="2.6 Dubbo演示项目.html">
+            
+                <a href="2.6 Dubbo演示项目.html">
+            
+                    
+                    2.6 Dubbo演示项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">三，优乐选项目搭建</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../day03/1.项目搭建.html">
+            
+                <a href="../day03/1.项目搭建.html">
+            
+                    
+                    1.项目搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../appendix/1.数据.html">
+            
+                <a href="../appendix/1.数据.html">
+            
+                    
+                    1.数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../appendix/2.架构模型.html">
+            
+                <a href="../appendix/2.架构模型.html">
+            
+                    
+                    2.架构模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../appendix/3.常用Linux指令.html">
+            
+                <a href="../appendix/3.常用Linux指令.html">
+            
+                    
+                    3.Linux指令补充
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.3.1 Linux环境搭建</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x4E00;&#xFF0C;linux&#x73AF;&#x5883;&#x642D;&#x5EFA;">&#x4E00;&#xFF0C;Linux&#x73AF;&#x5883;&#x642D;&#x5EFA;</h3>
+<p>&#x670D;&#x52A1;&#x5668;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x57FA;&#x672C;&#x90FD;&#x662F;&#x4F7F;&#x7528;Linux&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x5176;&#x7279;&#x70B9;&#x662F;&#x9AD8;&#x6548;&#xFF0C;&#x5B89;&#x5168;&#xFF0C;&#x786C;&#x4EF6;&#x8D44;&#x6E90;&#x5360;&#x7528;&#x4F4E;&#x3002;</p>
+<p>&#x5B66;&#x4E60;&#x9636;&#x6BB5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;<strong>VMware</strong>&#x8FDB;&#x884C;Linux&#x7CFB;&#x7EDF;&#x7684;&#x865A;&#x62DF;&#x5316;&#x3002;</p>
+<p>&#x5546;&#x7528;&#x73AF;&#x5883;&#x4E0B;&#x4E00;&#x822C;&#x4F7F;&#x7528;Centos&#xFF0C;&#x8BFE;&#x7A0B;&#x4F7F;&#x7528;&#x7684;linux&#x4E5F;&#x662F;centos&#x3002;</p>
+<p>&#x5176;&#x4E2D;&#x5173;&#x4E8E;Linux&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x6709;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x80FD;&#x63A5;&#x89E6;&#x8FC7;ubuntu&#xFF0C;&#x5B83;&#x662F;&#x5E26;&#x684C;&#x9762;&#x7684;Linux&#x7CFB;&#x7EDF;&#xFF0C;</p>
+<p>Centos&#x76F8;&#x4EA4;&#x800C;&#x8A00;&#x4F53;&#x79EF;&#x66F4;&#x5C0F;&#xFF0C;&#x8FD0;&#x884C;&#x66F4;&#x5FEB;&#x3002;</p>
+<h4 id="11--vmware&#x5B89;&#x88C5;">1.1  VMware&#x5B89;&#x88C5;</h4>
+<p>&#x5982;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<h5 id="&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x63A5;&#x53D7;&#x534F;&#x8BAE;">&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x63A5;&#x53D7;&#x534F;&#x8BAE;</h5>
+<p><img src="../asstes/3.0.png" alt="3.0"></p>
+<h5 id="&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x5B89;&#x88C5;&#x4F4D;&#x7F6E;">&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x5B89;&#x88C5;&#x4F4D;&#x7F6E;</h5>
+<p><img src="../asstes/3.1.png" alt="3.1"></p>
+<h5 id="&#x7B2C;&#x4E09;&#x6B65;&#xFF0C;&#x4FEE;&#x6539;&#x66F4;&#x65B0;&#x7B56;&#x7565;">&#x7B2C;&#x4E09;&#x6B65;&#xFF0C;&#x4FEE;&#x6539;&#x66F4;&#x65B0;&#x7B56;&#x7565;</h5>
+<p><img src="../asstes/3.2.png" alt="3.2"></p>
+<h5 id="&#x7B2C;&#x56DB;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;">&#x7B2C;&#x56DB;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;</h5>
+<p><img src="../asstes/3.3.png" alt="3.3"></p>
+<h5 id="&#x7B2C;&#x4E94;&#x6B65;&#xFF0C;&#x786E;&#x8BA4;&#x5B89;&#x88C5;&#x3002;">&#x7B2C;&#x4E94;&#x6B65;&#xFF0C;&#x786E;&#x8BA4;&#x5B89;&#x88C5;&#x3002;</h5>
+<p>&#x5B89;&#x88C5;&#x671F;&#x95F4;&#x4E0D;&#x8981;&#x505A;&#x591A;&#x4F59;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x514D;&#x5E72;&#x6270;&#x5B89;&#x88C5;&#x8FDB;&#x7A0B; </p>
+<p><img src="../asstes/3.4.png" alt="3.4"></p>
+<h5 id="&#x7B2C;&#x516D;&#x6B65;&#xFF0C;&#x8F93;&#x5165;&#x5B89;&#x88C5;&#x5305;&#x7684;&#x6FC0;&#x6D3B;&#x7801;&#xFF0C;&#x8FDB;&#x884C;&#x8BB8;&#x53EF;&#x8BC1;&#x8BA4;&#x8BC1;&#x5373;&#x53EF;&#x3002;">&#x7B2C;&#x516D;&#x6B65;&#xFF0C;&#x8F93;&#x5165;&#x5B89;&#x88C5;&#x5305;&#x7684;&#x6FC0;&#x6D3B;&#x7801;&#xFF0C;&#x8FDB;&#x884C;&#x8BB8;&#x53EF;&#x8BC1;&#x8BA4;&#x8BC1;&#x5373;&#x53EF;&#x3002;</h5>
+<p>&#x6FC0;&#x6D3B;&#x7801;&#x4E3A;&#xFF1A;<code>5A02H-AU243-TZJ49-GTC7K-3C61N</code></p>
+<p><img src="../asstes/3.5.png" alt="3.5"></p>
+<p><img src="../asstes/3.6.png" alt="3.6"></p>
+<h4 id="12-linux&#x7CFB;&#x7EDF;&#x5B89;&#x88C5;">1.2 Linux&#x7CFB;&#x7EDF;&#x5B89;&#x88C5;</h4>
+<h5 id="&#x7B2C;&#x4E00;&#x6B65;&#x542F;&#x52A8;vm">&#x7B2C;&#x4E00;&#x6B65;&#x542F;&#x52A8;vm</h5>
+<p><img src="../asstes/3.7.png" alt="3.7"></p>
+<h5 id="&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;centos&#x955C;&#x50CF;&#x6587;&#x4EF6;">&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;centos&#x955C;&#x50CF;&#x6587;&#x4EF6;</h5>
+<p><img src="../asstes/3.8.png" alt="3.8"></p>
+<h5 id="&#x7B2C;&#x4E09;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x8BE5;&#x7CFB;&#x7EDF;&#x540D;&#x5B57;&#x548C;&#x5B58;&#x653E;&#x4F4D;&#x7F6E;">&#x7B2C;&#x4E09;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x8BE5;&#x7CFB;&#x7EDF;&#x540D;&#x5B57;&#x548C;&#x5B58;&#x653E;&#x4F4D;&#x7F6E;</h5>
+<p><img src="../asstes/3.9.png" alt="3.9"></p>
+<h5 id="&#x7B2C;&#x56DB;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x8BE5;&#x7CFB;&#x7EDF;&#x786C;&#x76D8;&#x5BB9;&#x91CF;">&#x7B2C;&#x56DB;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x8BE5;&#x7CFB;&#x7EDF;&#x786C;&#x76D8;&#x5BB9;&#x91CF;</h5>
+<p><img src="../asstes/4.2.png" alt="4.2"></p>
+<h5 id="&#x7B2C;&#x4E94;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x5176;&#x4ED6;&#x786C;&#x4EF6;&#x89C4;&#x683C;">&#x7B2C;&#x4E94;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x5176;&#x4ED6;&#x786C;&#x4EF6;&#x89C4;&#x683C;</h5>
+<blockquote>
+<p>&#x5B66;&#x4E60;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x4E00;&#x822C;&#x4E0D;&#x505A;&#x8C03;&#x6574;</p>
+</blockquote>
+<p><img src="../asstes/4.3.png" alt="4.3"></p>
+<h5 id="&#x7B2C;&#x516D;&#x6B65;&#xFF0C;&#x8FDB;&#x5165;&#x7CFB;&#x7EDF;&#x5B89;&#x88C5;">&#x7B2C;&#x516D;&#x6B65;&#xFF0C;&#x8FDB;&#x5165;&#x7CFB;&#x7EDF;&#x5B89;&#x88C5;</h5>
+<p>&#x9009;&#x62E9;<code>Install CentOS 7</code>&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#xFF0C;&#x5B89;&#x88C5;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x4FEE;&#x6539;&#x3002;</p>
+<p><img src="../asstes/4.4.png" alt="4.4"></p>
+<h5 id="&#x7B2C;&#x4E03;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x8BED;&#x8A00;&#x73AF;&#x5883;">&#x7B2C;&#x4E03;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x8BED;&#x8A00;&#x73AF;&#x5883;</h5>
+<blockquote>
+<p>&#x9009;&#x62E9;&#x4E2D;&#x6587;&#x5373;&#x53EF;</p>
+</blockquote>
+<p><img src="../asstes/4.5.png" alt="4.5"></p>
+<h5 id="&#x7B2C;&#x516B;&#x6B65;&#xFF0C;&#x786E;&#x8BA4;&#x78C1;&#x76D8;&#x4F4D;&#x7F6E;">&#x7B2C;&#x516B;&#x6B65;&#xFF0C;&#x786E;&#x8BA4;&#x78C1;&#x76D8;&#x4F4D;&#x7F6E;</h5>
+<p><img src="../asstes/4.6.png" alt="4.6"></p>
+<h5 id="&#x7B2C;&#x4E5D;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x5BC6;&#x7801;">&#x7B2C;&#x4E5D;&#x6B65;&#xFF0C;&#x8BBE;&#x7F6E;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x5BC6;&#x7801;</h5>
+<p>&#x5207;&#x8BB0;&#xFF0C;&#x4E0D;&#x8981;&#x8BBE;&#x7F6E;&#x8FC7;&#x4E8E;&#x590D;&#x6742;&#xFF0C;&#x907F;&#x514D;&#x6BCF;&#x6B21;&#x64CD;&#x4F5C;&#x51FA;&#x9519;&#x3002;</p>
+<p>&#x8BE5;&#x754C;&#x9762;&#x4E2D;&#x53EA;&#x8BBE;&#x7F6E;root&#x5BC6;&#x7801;&#x9009;&#x9879;&#xFF0C;&#x4E0D;&#x505A;&#x521B;&#x5EFA;&#x7528;&#x6237;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><img src="../asstes/4.7.png" alt="4.7"></p>
+<h5 id="&#x7B2C;&#x5341;&#x6B65;&#xFF0C;&#x91CD;&#x542F;&#x865A;&#x62DF;&#x673A;">&#x7B2C;&#x5341;&#x6B65;&#xFF0C;&#x91CD;&#x542F;&#x865A;&#x62DF;&#x673A;</h5>
+<p><img src="../asstes/4.8.png" alt="4.8"></p>
+<h5 id="&#x7B2C;&#x5341;&#x4E00;&#x6B65;&#xFF0C;&#x767B;&#x5F55;&#x7CFB;&#x7EDF;">&#x7B2C;&#x5341;&#x4E00;&#x6B65;&#xFF0C;&#x767B;&#x5F55;&#x7CFB;&#x7EDF;</h5>
+<p><img src="../asstes/4.9.png" alt="4.9"></p>
+<blockquote>
+<p>&#x4E0A;&#x8FF0;&#x754C;&#x9762;&#x4E2D;:</p>
+<p>&#x8F93;&#x5165;&#x7684;&#x662F;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x8F93;&#x5165;&#x7684;&#x662F;&#x5BC6;&#x7801;&#xFF0C;&#x800C;&#x4E14;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x662F;&#x6CA1;&#x6709;&#x63D0;&#x793A;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x7EDD;&#x5BF9;&#x4E0D;&#x80FD;&#x8F93;&#x5165;&#x9519;&#x8BEF;</p>
+</blockquote>
+<h5 id="&#x7B2C;&#x5341;&#x4E8C;&#x6B65;&#x9AA4;&#xFF0C;&#x767B;&#x5F55;&#x6210;&#x529F;">&#x7B2C;&#x5341;&#x4E8C;&#x6B65;&#x9AA4;&#xFF0C;&#x767B;&#x5F55;&#x6210;&#x529F;</h5>
+<p><img src="../asstes/5.0.png" alt="5.0"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2.3 Dubbo.html" class="navigation navigation-prev " aria-label="Previous page: 2.3 Dubbo">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2.3.2 Linux链接工具安装.html" class="navigation navigation-next " aria-label="Next page: 2.3.2 Linux链接工具安装">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.3.1 Linux环境搭建","level":"2.3.1","depth":2,"next":{"title":"2.3.2 Linux链接工具安装","level":"2.3.2","depth":2,"path":"demand/2.3.2 Linux链接工具安装.md","ref":"./demand/2.3.2 Linux链接工具安装.md","articles":[]},"previous":{"title":"2.3 Dubbo","level":"2.3","depth":1,"path":"demand/2.3 Dubbo.md","ref":"./demand/2.3 Dubbo.md","articles":[{"title":"2.3.1 Linux环境搭建","level":"2.3.1","depth":2,"path":"demand/2.3.1 Linux环境搭建.md","ref":"./demand/2.3.1 Linux环境搭建.md","articles":[]},{"title":"2.3.2 Linux链接工具安装","level":"2.3.2","depth":2,"path":"demand/2.3.2 Linux链接工具安装.md","ref":"./demand/2.3.2 Linux链接工具安装.md","articles":[]},{"title":"2.3.3 Linux相关基础配置","level":"2.3.3","depth":2,"path":"demand/2.3.3 Linux相关基础配置.md","ref":"./demand/2.3.3 Linux相关基础配置.md","articles":[]},{"title":"2.3.4 使用链接工具接入到Linux操作系统","level":"2.3.4","depth":2,"path":"demand/2.3.4 使用链接工具接入到Linux操作系统.md","ref":"./demand/2.3.4 使用链接工具接入到Linux操作系统.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"demand/2.3.1 Linux环境搭建.md","mtime":"2019-11-10T11:43:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-19T11:17:49.140Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
